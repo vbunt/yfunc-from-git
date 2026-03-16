@@ -29,10 +29,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Deploy Function
         id: sls-func
-        uses: yc-actions/yc-sls-function@v3.1.0
+        uses: yc-actions/yc-sls-function@v4
         with:
           yc-sa-id: ${{env.SA_ID}}
           folder-id: ${{env.FOLDER_ID}}
